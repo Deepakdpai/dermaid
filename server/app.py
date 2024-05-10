@@ -1,4 +1,4 @@
-import cv2
+# import cv2
 from predict import predict_class
 from skin_detection import check_skin
 import numpy as np
@@ -46,8 +46,8 @@ def get_image():
 
 
 if __name__ == '__main__':
-    # app.run(port=8000, debug=True)
-    config = uvicorn.Config("app:app", port=5000,
-                            log_level="info", host="0.0.0.0")
-    server = uvicorn.Server(config)
-    server.run()
+    app.run(port=8000, debug=True)
+    # config = uvicorn.Config("app:app", port=5000,
+    #                         log_level="info", host="0.0.0.0")
+    # server = uvicorn.Server(config)
+    # server.run()

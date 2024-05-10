@@ -85,7 +85,7 @@ export function WebcamCapture() {
             screenshotFormat="image/jpeg"
             width={1280}
             videoConstraints={videoConstraints}
-            className="object-cover object-center rounded-md bg-muted raspi:h-[200px] raspi:w-[300px]"
+            className="object-cover object-center rounded-md bg-muted raspi:h-[200px] raspi:w-[300px] w-[300px] h-[300px]"
           />
         )}
       </div>

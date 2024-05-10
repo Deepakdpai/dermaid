@@ -23,7 +23,7 @@ classes = {
     6: 'Not a skin disease'
 }
 
-model = tf.keras.models.load_model("models/first_train/max_acc/model.keras")
+model = tf.keras.models.load_model("models/model.keras")
 
 
 def predict_class(fname):
@@ -37,7 +37,8 @@ def predict_class(fname):
 
     preds = {k: v for (k, v) in result}
     K.backend.clear_session()
+    print(preds)
     return preds
 
 
-# predict_class("test_imgs/stock.jpg")
+predict_class("test_imgs/img.jpg")
