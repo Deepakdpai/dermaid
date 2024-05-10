@@ -41,4 +41,4 @@ def predict_class(fname):
     return preds
 
 
-predict_class("test_imgs/img.jpg")
+# predict_class("test_imgs/img.jpg")
